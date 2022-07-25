@@ -22,7 +22,7 @@
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-<!--//fonts-->
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62ddf484111cf300197086af&product=inline-share-buttons" async="async"></script>
 </head>
 <body>
 <!-- header -->
@@ -43,8 +43,8 @@
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--iris">
                <ul class="nav navbar-nav menu__list">
-                              <li class="menu__item">
-                                 <a href="/" class="menu__link">Home</a>
+                              <li class="menu__item ">
+                                 <a href=" /" class="menu__link">Home</a>
                               </li>
                               <li class="menu__item">
                                  <a href="/about" class="menu__link">About</a>
@@ -52,13 +52,13 @@
                               <li class="menu__item">
                                  <a href="/testimonial" class="menu__link">Testimonial</a>
                               </li>
-                              <li class="menu__item">
+                              <li class="menu__item menu__item--current">
                                  <a href="/service" class="menu__link">Service</a>
                               </li>
                               <li class="menu__item">
                                  <a href="/gallery" class="menu__link">Gallery</a>
                               </li>
-                              <li class="menu__item  menu__item--current">
+                              <li class="menu__item">
                                  <a href="/blog" class="menu__link">Blog</a>
                               </li>
 							  <li class="menu__item">
@@ -73,80 +73,22 @@
 	</div>
 <!-- //header -->
 
-  <!-- blog -->
-  <br><br>
-<h3 class="title-w3-agileits title-black-wthree">Blog</h3> 
-<div class="band">
-@foreach ($blog as $b)
-  <div class="item-4">
-    <a href="{{ route('blog.show',$b->id) }}" class="card">
-      <div class="thumb" style="background-image: url('/image/{{ $b->image }}');"></div>
-      <article>
-        <h1>{{ $b->blog_title }}</h1>
-        <span>{{ $b->category}}</span>
-      </article>
-    </a>
-  </div>
-  @endforeach
+<!-- blog -->
+
+<div class="content">
+
+    <a href="/blog"><button class="btn btn-danger">Back</button></a>
+    <h2 style="text-align: center">{{ $blog->blog_title }}</h2>
+    <div class="text-center">
+    <img src="/image/{{ $blog->image }}" class="img-fluid" alt="No Image">
+    <br><!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+    </div><br><br>
+    <h5>{!! $blog->description !!}</h5>
+    <br><br>
 </div>
-<br><br>
+
 <!-- //blog -->
 
-<!-- contact -->
-<section class="contact-w3ls" id="contact">
-	<div class="container">
-		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left">
-			<div class="contact-agileits">
-				<h4>Fast Access</h4>
-          <li>
-            <a class="nav-link" href="/" style="color: white">Home</a><br>
-          </li>
-          <li>
-            <a class="nav-link" href="/about" style="color: white">About Us</a><br>
-          </li>
-          <li>
-            <a class="nav-link" href="/service" style="color: white">Service</a><br>
-          </li>
-          <li>
-            <a class="nav-link" href="/gallery" style="color: white">Gallery</a><br>
-          </li>
-          <li>
-            <a class="nav-link" href="/testimonial" style="color: white">Testimonial</a><br>
-          </li>
-          <li>
-            <a class="nav-link" href="/blog" style="color: white">Blog</a><br>
-          </li>
-        </ul>
-		</div>
-			<div class="contact-agileits">
-				<div class="row g-4">
-					<div class="col-md-6">
-						<img src="../images/1.jpg" alt="No Image" width="200" height="200" style="margin-top: 50px; margin-left: 20px;"> <br> <br>
-					</div>
-					<div class="col-md-6">
-						<p class="contact-agile1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quos tempore harum laborum eaque. Iusto illum mollitia at tempore ex, perferendis iste veritatis, debitis omnis, quas exercitationem eos cumque pariatur!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
-		<h4>Connect With Us</h4>
-			<p class="contact-agile1"><strong>Phone :</strong>+62 821-1154-4535</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">INFO@BigCompany.COM</a></p>
-			<p class="contact-agile1"><strong>Address :</strong> Kota Bogor, Indonesia</p>							
-			<div class="social-bnr-agileits footer-icons-agileinfo">
-				<ul class="social-icons3">
-								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-								
-							</ul>
-			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5543206459!2d106.77703051434406!3d-6.577790366129914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c53991e19627%3A0x6a1afcab769f29f8!2sGraha%20nurul%20menteng!5e0!3m2!1sid!2sid!4v1658157028633!5m2!1sid!2sid" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</section>
 <!-- /contact -->
 			<div class="copy">
 		        <p>© BIG COMPANY . All Rights Reserved | Design by <a href="index.php">BIG COMPANY</a> </p>

@@ -14,8 +14,14 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
     <table class="table table-bordered">
+        <thead>
     <tr>
                   <th>Title</th>
                   <th>Image</th>
@@ -48,6 +54,7 @@
                     </td>
                 </tr>
         @endforeach
+        </tbody>
     </table>
     
     {!! $configs->links() !!}

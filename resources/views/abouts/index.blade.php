@@ -14,8 +14,14 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
     <table class="table table-bordered">
+        <thead>
         <tr>
             <th>About Us Title</th>
             <th width="280px">Description</th>
@@ -23,7 +29,9 @@
             <th>Misi</th>
             <th>Action</th>
         </tr>
+        </thead>
         @foreach ($abouts as $about)
+        <tbody>
         <tr>
             <td>{{ $about->title }}</td>
             <td><?= $about->description ?></td>
@@ -34,6 +42,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
     
     {!! $abouts->links() !!}

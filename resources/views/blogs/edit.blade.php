@@ -33,7 +33,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Description</strong>
-                   <textarea name="description" class="form-control">{{$blog->description}}</textarea>
+                <input id="desc" type="hidden" name="description" class="form-control" value="{{ $blog->description }}"></input>
+                <trix-editor input="desc"></trix-editor>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 mb-2">

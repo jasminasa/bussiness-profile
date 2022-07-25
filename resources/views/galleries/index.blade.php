@@ -17,8 +17,14 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
     <table class="table table-bordered">
+        <thead>
         <tr>
             <th>Gallery Title</th>
             <th width="280px">Description</th>
@@ -26,6 +32,8 @@
             <th>Category</th>
             <th>Action</th>
         </tr>
+        </thead>
+        <tbody>
         @foreach ($galleries as $gallery)
         <tr>
             <td>{{ $gallery->title }}</td>
@@ -47,6 +55,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
     
     {!! $galleries->links() !!}

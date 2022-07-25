@@ -12,6 +12,7 @@ use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UBlogController;
 use Illuminate\Auth\Events\Logout;
 
 /*
@@ -32,9 +33,8 @@ Route::get('/about', function () {
 Route::get('/service', function () {
     return view('dashboard.service');
 });
-Route::get('/blog', function () {
-    return view('dashboard.blog');
-});
+Route::resource('/blog', UBlogController::class);
+
 Route::get('/gallery', function () {
     return view('dashboard.gallery');
 });

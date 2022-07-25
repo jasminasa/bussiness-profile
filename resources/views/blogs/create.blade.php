@@ -33,7 +33,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12 mb-3">
                 <div class="form-group">
                     <strong>Description</strong>
-                   <textarea name="description" class="form-control"></textarea>
+                    <input id="desc" type="hidden" name="description" class="form-control"></input>
+                    <trix-editor input="desc"></trix-editor>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 mb-2">

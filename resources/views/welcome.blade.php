@@ -27,21 +27,6 @@
 <body>
 <!-- header -->
 <div class="banner-top">
-			<div class="social-bnr-agileits">
-				<ul class="social-icons3">
-								<li><a href="https://www.facebook.com/" class="fa fa-facebook icon-border facebook"> </a></li>
-								<li><a href="https://twitter.com/" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="https://plus.google.com/u/0/" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-							</ul>
-			</div>
-			<div class="contact-bnr-w3-agile">
-				<ul>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">INFO@bigcompany.COM</a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>+62 821-1154-4535</li>
-				</ul>
-			</div>
-			<div class="clearfix"></div>
-		</div>
 	<div class="w3_navigation">
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -74,7 +59,7 @@
                                  <a href="/gallery" class="menu__link">Gallery</a>
                               </li>
                               <li class="menu__item">
-                                 <a href="/blog" class="menu__link">Blog</a>
+                                 <a href="{{ url('blog') }}" class="menu__link">Blog</a>
                               </li>
 							  <li class="menu__item">
                                  <a href="/contact" class="menu__link">Contact</a>
@@ -208,133 +193,26 @@
 
 
 <!-- Gallery -->
-<div class="wrapper">
-    <br><br>
-<h3 class="title-w3-agileits title-black-wthree">Our Gallery</h3> 
-  <div class="cols">
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="background-image: url(https://unsplash.it/500/500/)">
-						<div class="inner">
-							<p>Diligord</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
+	<section class="portfolio" id="portfolio">
+	<div class="container-fluid">
+		<div class="row">
+<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1 class="gallery-title">Gallery</h1>
 			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="url(https://unsplash.it/511/511/)">
-						<div class="inner">
-							<p>Rocogged</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="background-image: url(https://unsplash.it/502/502/)">
-						<div class="inner">
-							<p>Strizzes</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="background-image: url(https://unsplash.it/503/503/)">
-						<div class="inner">
-							<p>Clossyo</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="background-image: url(https://unsplash.it/504/504/">
-						<div class="inner">
-							<p>Rendann</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="background-image: url(https://unsplash.it/505/505/)">
-						<div class="inner">
-							<p>Reflupper</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-						<div class="inner">
-							<p>Acirassi</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col" ontouchstart="this.classList.toggle('hover');">
-				<div class="containerservice">
-					<div class="front" style="background-image: url(https://unsplash.it/508/508/)">
-						<div class="inner">
-							<p>Sohanidd</p>
-              <span>Lorem ipsum</span>
-						</div>
-					</div>
-					<div class="back">
-						<div class="inner">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<br/>
+			@foreach ($gallery  as $g)
+            <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <img class="img-responsive" alt="" src="/image/{{ $g->image }}" />
+                    <div class='img-info'>
+                        <h4>{{ $g->title}}</h4>
+						<p>{{ $g->description }}</p>
+                    </div>
+            </div>
+			@endforeach
 		</div>
- </div>
- <br><br>
+	</div>
+</section>
+	<br><br>
 <!-- //Gallery-->
 
 <!-- Service  -->
@@ -360,187 +238,149 @@
 <!-- //Service  -->
 
   <!-- visitors -->
-	<div class="w3l-visitors-agile" id="visitors">
-		<div class="container">
-         <h3 class="title-w3-agileits title-black-wthree">Testimonials</h3> 
-		</div>
-		<div class="w3layouts_work_grids">
-			<section class="slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="w3layouts_work_grid_left">
-								<img src="../images/5.jpg" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-									<img src="../images/c1.jpg" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								<h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Julia Rose</h5>
-								<p>Germany</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
-						<li>
-							<div class="w3layouts_work_grid_left">
-								<img src="../images/5.jpg" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-									<img src="../images/c2.jpg" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								<h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Jahnatan Smith</h5>
-								<p>United States</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
-						<li>
-							<div class="w3layouts_work_grid_left">
-								<img src="../images/5.jpg" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-									<img src="../images/c3.jpg" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								<h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Rosalind Cloer</h5>
-								<p>Italy</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
-						<li>
-							<div class="w3layouts_work_grid_left">
-								<img src="../images/5.jpg" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-									<img src="../images/c4.jpg" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								<h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Amie Bublitz</h5>
-								<p>Switzerland</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>	
-	</div>
+  <section class="section-medium section-arrow--bottom-center section-arrow-primary-color bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-white text-center">
+                <h2 class="section-title "> What Others Say About Us</h2>
+                <p class="section-sub-title">
+                    We are a passionate digital design agency that specializes in beautiful and easy-to-
+                    <br> use digital design &amp; web development services.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-primary t-bordered">
+    <div class="container">
+        <div class="row testimonial-three testimonial-three--col-three">
+            <div class="col-md-4 testimonial-three-col">
+                <div class="testimonial-inner">
+                    <div class="testimonial-image" itemprop="image">
+                        <img width="180" height="180" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+                            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 testimonial-three-col">
+                <div class="testimonial-inner">
+                    <div class="testimonial-image" itemprop="image">
+                        <img width="180" height="180" src="https://bootdey.com/img/Content/avatar/avatar2.png">
+                    </div>
+
+                    <div class="testimonial-content">
+                        <p>
+                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                        </p>
+                    </div>
+
+                    <div class="testimonial-meta">
+                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 testimonial-three-col">
+                <div class="testimonial-inner">
+                    <div class="testimonial-image" itemprop="image">
+                        <img width="180" height="180" src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+                            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 testimonial-three-col">
+                <div class="testimonial-inner">
+                    <div class="testimonial-image" itemprop="image">
+                        <img width="180" height="180" src="https://bootdey.com/img/Content/avatar/avatar4.png">
+                    </div>
+
+                    <div class="testimonial-content">
+                        <p>
+                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                        </p>
+                    </div>
+
+                    <div class="testimonial-meta">
+                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 testimonial-three-col">
+                <div class="testimonial-inner">
+                    <div class="testimonial-image" itemprop="image">
+                        <img width="180" height="180" src="https://bootdey.com/img/Content/avatar/avatar5.png">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>
+                            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                        </p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#">Media Wiki</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 testimonial-three-col">
+                <div class="testimonial-inner">
+                    <div class="testimonial-image" itemprop="image">
+                        <img width="180" height="180" src="https://bootdey.com/img/Content/avatar/avatar6.png">
+                    </div>
+
+                    <div class="testimonial-content">
+                        <p>
+                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                        </p>
+                    </div>
+
+                    <div class="testimonial-meta">
+                        <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
+                        <span class="testimonial-job-title" itemprop="jobTitle">CEO</span> – <a class="testimonial-link" href="#" >Media Wiki</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
   <!-- visitors -->
 
   <!-- blog -->
 <br><br>
 <h3 class="title-w3-agileits title-black-wthree">Blog</h3> 
 <div class="band">
-  <div class="item-1">
-    <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
-      <article>
-        <h1>International Artist Feature: Malaysia</h1>
-        <span>Mary Winkler</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-2">
-    <a href="https://webdesign.tutsplus.com/articles/how-to-conduct-remote-usability-testing--cms-27045" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png);"></div>
-      <article>
-        <h1>How to Conduct Remote Usability Testing</h1>
-        <span>Harry Brignull</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-3">
-    <a href="https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-5.jpg);"></div>
-      <article>
-        <h1>Created by You, July Edition</h1>
-        <p>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
-        <span>Melody Nieves</span>
-      </article>
-    </a>
-  </div>
+@foreach ($blog as $b)
   <div class="item-4">
-    <a href="https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/landing.png);"></div>
+    <a href="/blog" class="card">
+      <div class="thumb" style="background-image: url('/image/{{ $b->image }}');"></div>
       <article>
-        <h1>How to Code a Scrolling “Alien Lander” Website</h1>
-        <p>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
-        <span>Kezz Bracey</span>
+        <h1>{{ $b->blog_title }}</h1>
+        <span>{{ $b->category}}</span>
       </article>
     </a>
   </div>
-  <div class="item-5">
-    <a href="https://design.tutsplus.com/tutorials/stranger-things-inspired-text-effect--cms-27139" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/strange.jpg);"></div>
-      <article>
-        <h1>How to Create a “Stranger Things” Text Effect in Adobe Photoshop</h1>
-        <span>Rose</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-6">
-    <a href="https://photography.tutsplus.com/articles/5-inspirational-business-portraits-and-how-to-make-your-own--cms-27338" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flor.jpg);"></div>
-      <article>
-        <h1>5 Inspirational Business Portraits and How to Make Your Own</h1>
-
-        <span>Marie Gardiner</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-7">
-    <a href="https://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281" class="card">
-      <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/china.png);"></div>
-      <article>
-        <h1>Notes From Behind the Firewall: The State of Web Design in China</h1>
-        <span>Kendra Schaefer</span>
-      </article>
-    </a>
-  </div>
+  @endforeach
 </div>
 <br><br>
 <!-- //blog -->

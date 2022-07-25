@@ -4,6 +4,9 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+html {
+    scroll-behavior: smooth;
+}
 html, body{
 	margin:0;
 	font-size: 100%;
@@ -612,7 +615,7 @@ li.menu__item:nth-child(6) {
   padding: 0;
 }
 .rslides li {
-  -webkit-backface-visibility: hidden;
+  webkit-backface-visibility: hidden;
   position: absolute;
   display:none;
   width: 100%;
@@ -1668,7 +1671,7 @@ section{
 /*-- testimonial --*/
 body{margin-top:20px;}
 .btn.btn-outline-primary:hover, .bg-primary {
-    background-color: #cecb0c !important;
+    background-color: #ffce14 !important;
 }
 .section-medium {
     padding: 55px 0px;

@@ -17,8 +17,14 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
-    <table class="table table-bordered">
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
+    <table id="table_id" class="table table-border" >
+    <thead>
         <tr>
             <th>Blog Title</th>
             <th width="280px">Description</th>
@@ -26,10 +32,12 @@
             <th>Category</th>
             <th>Action</th>
         </tr>
+    </thead>
         @foreach ($blogs as $blog)
+    <tbody>
         <tr>
             <td>{{ $blog->blog_title }}</td>
-            <td>{{ $blog->description }}</td>
+            <td width="180px" >{!! substr ($blog->description, 0, 50) !!}</td>
             <td>
                 <img src="/image/{{ $blog->image }}" width="100px">
             </td>
@@ -46,6 +54,8 @@
                 </form>
             </td>
         </tr>
+    </tbody>
+    
         @endforeach
     </table>
     

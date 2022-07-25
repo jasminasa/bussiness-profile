@@ -14,8 +14,14 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
     <table class="table table-bordered">
+        <thead>
         <tr>
         <th>Address</th>
         <th>Phone</th>
@@ -23,7 +29,9 @@
         <th>Website</th>
         <th>Action</th>
         </tr>
+        </thead>
         @foreach ($contacts as $contact)
+        <tbody>
         <tr>
             <td>{{ $contact->alamat }}</td>
             <td>{{ $contact->telp }}</td>
@@ -34,6 +42,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
     
     {!! $contacts->links() !!}

@@ -27,21 +27,6 @@
 <body>
 <!-- header -->
 <div class="banner-top">
-			<div class="social-bnr-agileits">
-				<ul class="social-icons3">
-								<li><a href="https://www.facebook.com/" class="fa fa-facebook icon-border facebook"> </a></li>
-								<li><a href="https://twitter.com/" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="https://plus.google.com/u/0/" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-							</ul>
-			</div>
-			<div class="contact-bnr-w3-agile">
-				<ul>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">INFO@bigcompany.COM</a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>+62 821-1154-4535</li>
-				</ul>
-			</div>
-			<div class="clearfix"></div>
-		</div>
 	<div class="w3_navigation">
 		<div class="container">
 			<nav class="navbar navbar-default">

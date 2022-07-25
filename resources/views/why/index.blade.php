@@ -14,14 +14,22 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
     <table class="table table-bordered">
+        <thead>
         <tr>
             <th>Title</th>
             <th>Content</th>
             <th>Action</th>
         </tr>
+        </thead>
         @foreach ($why as $why)
+        <tbody>
         <tr>
             <td>{{ $why->title }}</td>
             <td>{{ $why->content }}</td>
@@ -30,6 +38,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
     
         

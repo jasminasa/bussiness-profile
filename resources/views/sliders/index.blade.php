@@ -17,14 +17,22 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
     <table class="table table-bordered">
+        <thead>
         <tr>
             <th>Slider Content</th>
             <th>Foto</th>
             <th>Action</th>
         </tr>
+        </thead>
         @foreach ($sliders as $slider)
+        <tbody>
         <tr>
             <td>{{ $slider->keterangan }}</td>
             <td>
@@ -43,6 +51,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
     
     {!! $sliders->links() !!}

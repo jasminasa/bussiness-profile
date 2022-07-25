@@ -17,8 +17,14 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+    <script type="module">
+        import {
+            DataTable
+        } from "{{asset('js/datatables.js')}}"
+        const table = new DataTable("table")
+    </script>
     <table class="table table-bordered">
+        <thead>
         <tr>
             <th>Name</th>
             <th>Agency</th>
@@ -26,7 +32,9 @@
             <th>Image</th>
             <th>Action</th>
         </tr>
+        </thead>
         @foreach ($testimonials as $testimonial)
+        <tbody>
         <tr>
             <td>{{ $testimonial->name }}</td>
             <td>{{ $testimonial->agency }}</td>
@@ -47,6 +55,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
     
     {!! $testimonials->links() !!}
